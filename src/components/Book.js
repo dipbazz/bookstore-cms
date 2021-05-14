@@ -1,9 +1,9 @@
-const Book = ({id, title, category}) => {
+const Book = ({book}) => {
   return (
     <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
+      <td>{book.id}</td>
+      <td>{book.title}</td>
+      <td>{book.category}</td>
     </tr>
   )
 }

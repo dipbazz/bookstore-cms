@@ -11,7 +11,7 @@ const BooksForm = () => {
         <div>
           <label>Book category</label>
           <select>
-            {categories.map(category => <option value={category}>{category}</option>)}
+            {categories.map(category => <option key={category} value={category}>{category}</option>)}
           </select>
         </div>
 
