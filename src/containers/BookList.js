@@ -1,9 +1,25 @@
-const BookList = () => {
+import { connect } from 'react-redux';
+import Book from '../components/Book';
+
+const BookList = ({books}) => {
   return (
     <>
-      book list.
+      <table>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>title</th>
+            <th>category</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            books.map(book => <Book book={book} />)
+          }
+        </tbody>
+      </table>
     </>
   )
 }
 
-export default BookList;
+export default connect()(BookList);
