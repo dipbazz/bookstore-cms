@@ -2,20 +2,25 @@ const BooksForm = () => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <>
-      <form action="#">
-        <div>
-          <label>Book title</label>
-          <input type="text" placeholder="Book title" />
-        </div>
+      <div>
+        <label htmlFor="title">
+          Book title
+          <input id="title" type="text" placeholder="Book title" />
+        </label>
+      </div>
 
-        <div>
-          <label>Book category</label>
-          <select>
-            {categories.map((category) => <option key={category} value={category}>{category}</option>)}
+      <div>
+        <label htmlFor="category">
+          Book category
+          <select id="category">
+            {categories.map((item) => <option key={item} value={item}>{item}</option>)}
           </select>
-        </div>
+        </label>
+      </div>
 
-      </form>
+      <div>
+        <input type="submit" value="Add" />
+      </div>
     </>
   );
 };

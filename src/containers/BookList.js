@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import Book from '../components/Book';
 
 const BookList = ({ books }) => (
@@ -13,12 +14,16 @@ const BookList = ({ books }) => (
       </thead>
       <tbody>
         {
-            books.map((book) => <Book key={book.id} book={book} />)
-          }
+          books.map((book) => <Book key={book.id} book={book} />)
+        }
       </tbody>
     </table>
   </>
 );
+
+BookList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 const mapStateToProps = (state) => ({
   books: state.books,
