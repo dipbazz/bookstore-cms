@@ -11,20 +11,13 @@ class BooksForm extends React.Component {
       category: 'Action',
     };
 
-    this.handleTitleChange = this.handleTitleChange.bind(this);
-    this.handleCategoryChange = this.handleCategoryChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleTitleChange(e) {
+  handleChange({ target: { name, value } }) {
     this.setState({
-      title: e.target.value,
-    });
-  }
-
-  handleCategoryChange(e) {
-    this.setState({
-      category: e.target.value,
+      [name]: value,
     });
   }
 
@@ -35,7 +28,7 @@ class BooksForm extends React.Component {
     createBook(title, category);
     this.setState({
       title: '',
-      category: '',
+      category: 'Action',
     });
   }
 
@@ -47,14 +40,14 @@ class BooksForm extends React.Component {
         <div>
           <label htmlFor="title">
             Book title
-            <input id="title" value={title} type="text" placeholder="Book title" onChange={this.handleTitleChange} required />
+            <input id="title" value={title} name="title" type="text" placeholder="Book title" onChange={this.handleChange} required />
           </label>
         </div>
 
         <div>
           <label htmlFor="category">
             Book category
-            <select id="category" onChange={this.handleCategoryChange} value={category} required>
+            <select id="category" name="category" onChange={this.handleChange} value={category} required>
               {categories.map((item) => <option key={item} value={item}>{item}</option>)}
             </select>
           </label>
