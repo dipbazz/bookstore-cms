@@ -1,6 +1,6 @@
 import * as actions from './actionTypes';
 
-export const createBook = ({ title, category }) => ({
+export const createBook = (title, category) => ({
   type: actions.CREATE_BOOK,
   title,
   category,

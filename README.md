@@ -15,7 +15,7 @@ A bookstore CMS project built using react where user can add, delete, and update
 - Clone the repo and navigate to the directory
 - Install the npm package with `npm install`
 - Start the server with `npm start`
-- Open your browser at http://localhost:3000/ and start to perform your calculation.
+- Open your browser at [localhost](http://localhost:3000/).
 
 
 ## Available Scripts
