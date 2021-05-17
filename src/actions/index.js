@@ -10,3 +10,8 @@ export const removeBook = (id) => ({
   type: actions.REMOVE_BOOK,
   id,
 });
+
+export const changeFilter = (category) => ({
+  type: actions.CHANGE_FILTER,
+  category,
+});
