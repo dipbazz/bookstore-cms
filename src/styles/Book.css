@@ -1,0 +1,85 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 25px 30px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.card__left {
+  flex: 2;
+}
+
+.card__category {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.card__title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #121212;
+  font-size: 22px;
+  letter-spacing: -0.2px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.card__author {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4386bf;
+  text-transform: capitalize;
+}
+
+.card__mid {
+  flex: 1;
+}
+
+.progress_bar {
+  border: 5px solid #e8e8e8;
+  width: 68px;
+  height: 68px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.progress_bar::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 5px solid #307bbe;
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.card__right {
+  flex: 1;
+}
+
+.card .list {
+  margin-top: 50px;
+}
+
+.card__link {
+  border: none;
+  padding: 2px 10px 2px 0;
+  margin-right: 15px;
+  color: #4386bf;
+  background: transparent;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  border-right: 2px solid #e8e8e8;
+}
+
+.list__item:last-child .card__link {
+  border: none;
+}
