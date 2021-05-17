@@ -10,19 +10,16 @@ class BooksForm extends React.Component {
       title: '',
       category: 'Action',
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange({ target: { name, value } }) {
+  handleChange = ({ target: { name, value } }) => {
     this.setState({
       [name]: value,
     });
   }
 
-  handleSubmit(e) {
-    e.preventDefault();
+  handleSubmit = (event) => {
+    event.preventDefault();
     const { title, category } = this.state;
     const { createBook } = this.props;
     createBook(title, category);
