@@ -20,6 +20,7 @@ const state = {
       category: 'Action',
     },
   ],
+  filter: 'All',
 };
 const store = createStore(rootReducer, state);
 
