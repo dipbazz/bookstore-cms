@@ -21,17 +21,31 @@ const Book = ({ book, handleRemoveBook }) => (
     </div>
 
     <div className="card__mid">
-      <div className="progress_bar" />
-      <div>
-        <div>64%</div>
-        <div>Completed</div>
+      <div className="progress">
+        <div className="progress-ring">
+          <svg className="progress-ring__wrapper">
+            <circle
+              className="progress-ring__circle"
+              fill="transparent"
+              r="32"
+              cx="34"
+              cy="34"
+            />
+          </svg>
+        </div>
+        <div className="progress-info">
+          <div className="progress__percent">64%</div>
+          <div className="progress__status">Completed</div>
+        </div>
       </div>
     </div>
 
     <div className="card__right">
-      <div>current chapter</div>
-      <div>Chapter 17</div>
-      <button type="button">Update Progress</button>
+      <div className="chapter">
+        <div className="chapter__current">current chapter</div>
+        <div className="chapter__name">Chapter 17</div>
+        <button type="button" className="chapter__button">Update Progress</button>
+      </div>
     </div>
   </div>
 );

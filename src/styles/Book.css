@@ -37,36 +37,8 @@
   text-transform: capitalize;
 }
 
-.card__mid {
-  flex: 1;
-}
-
-.progress_bar {
-  border: 5px solid #e8e8e8;
-  width: 68px;
-  height: 68px;
-  border-radius: 100px;
-  position: relative;
-}
-
-.progress_bar::before {
-  position: absolute;
-  content: "";
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid #307bbe;
-  border-radius: 100px;
-  z-index: 1;
-}
-
-.card__right {
-  flex: 1;
-}
-
 .card .list {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .card__link {
@@ -78,8 +50,102 @@
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
   border-right: 2px solid #e8e8e8;
+  cursor: pointer;
+}
+
+.card__link:hover {
+  color: #3484ca;
+  font-weight: bold;
 }
 
 .list__item:last-child .card__link {
   border: none;
+}
+
+.card__mid {
+  flex: 1;
+  padding-right: 10px;
+  border-right: 2px solid #e8e8e8;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.progress-ring {
+  border: 5px solid #e8e8e8;
+  width: 68px;
+  height: 68px;
+  border-radius: 100px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.progress-ring__wrapper {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  width: inherit;
+  height: inherit;
+  transform: rotate(-95deg);
+}
+
+.progress-ring__circle {
+  stroke: #307bbe;
+  stroke-width: 5px;
+  stroke-dasharray: 140;
+}
+
+.progress__percent {
+  font-size: 32px;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.progress__status {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.card__right {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.chapter__current {
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: #121212;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+}
+
+.chapter__name {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  font-family: 'Roboto Slab', serif;
+  color: #121212;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.chapter__button {
+  border-radius: 3px;
+  padding: 8px 25px;
+  margin-top: 10px;
+  background: #0290ff;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.2px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
