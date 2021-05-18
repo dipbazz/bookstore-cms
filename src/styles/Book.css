@@ -9,6 +9,7 @@
 
 .card__left {
   flex: 2;
+  padding-right: 30px;
 }
 
 .card__category {

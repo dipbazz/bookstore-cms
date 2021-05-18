@@ -11,13 +11,13 @@ const state = {
   books: [
     {
       id: Math.random(),
-      title: 'First book',
-      category: 'Action',
+      title: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future',
+      category: 'Biography',
     },
     {
       id: Math.random(),
-      title: 'second book',
-      category: 'Action',
+      title: 'Sapiens: A Brief History of Humankind',
+      category: 'History',
     },
   ],
   filter: 'All',
