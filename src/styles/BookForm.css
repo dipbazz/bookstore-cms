@@ -2,7 +2,7 @@
   font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  color: #888888;
+  color: #888;
   letter-spacing: -0.18px;
   text-transform: uppercase;
 }
@@ -18,7 +18,7 @@
   border: 1px solid #e8e8e8;
   font-size: 16px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 
