@@ -1,12 +1,14 @@
 .App {
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 150px;
 }
 
 @media screen and (min-width: 1200px) {
   .App {
     width: 1150px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
