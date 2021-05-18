@@ -1,0 +1,28 @@
+.App {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 120px;
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+}
+
+.divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: transparent;
+  border: 1px solid #e8e8e8;
+}

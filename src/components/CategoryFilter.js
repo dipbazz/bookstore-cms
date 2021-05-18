@@ -4,12 +4,9 @@ const CategoryFilter = ({ handleFilterChange }) => {
   const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
-    <label htmlFor="category">
-      Book category
-      <select id="category" name="category" onChange={handleFilterChange} required>
-        {categories.map((item) => <option key={item} value={item}>{item}</option>)}
-      </select>
-    </label>
+    <select className="form__input filter" id="category" name="category" onChange={handleFilterChange} required>
+      {categories.map((item) => <option key={item} value={item}>{item}</option>)}
+    </select>
   );
 };
 

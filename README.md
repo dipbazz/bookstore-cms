@@ -6,7 +6,7 @@
 
 A bookstore CMS project built using react where user can add, delete, and update the book in the system.
 
-<!-- ![Screenshot of bookstore CMS app]() -->
+![Screenshot of bookstore CMS app](./public/bookstore.png)
 
 ## Getting the app in the local machine.
 
@@ -59,7 +59,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This project is hosted on netlify.
 
-[Live demo link]()
+[Live demo link](https://bookstore-cms-db.netlify.app/)
 
 ## Built With
 

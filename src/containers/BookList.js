@@ -21,27 +21,19 @@ class BookList extends React.Component {
     return (
       <>
         <CategoryFilter handleFilterChange={(e) => this.handleFilterChange(e)} />
-        <table>
-          <thead>
-            <tr>
-              <th>Book ID</th>
-              <th>title</th>
-              <th>category</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              books.filter((book) => book.category === filter || filter === 'All').map((book) => (
-                <Book
-                  key={book.id}
-                  book={book}
-                  handleRemoveBook={() => this.handleRemoveBook(book.id)}
-                />
-              ))
-            }
-          </tbody>
-        </table>
+        <div>
+          {
+          books.filter((book) => book.category === filter || filter === 'All').map((book) => (
+            <Book
+              key={book.id}
+              book={book}
+              handleRemoveBook={() => this.handleRemoveBook(book.id)}
+            />
+          ))
+        }
+        </div>
+
+        <hr className="divider" />
       </>
     );
   }
