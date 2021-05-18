@@ -32,6 +32,8 @@ class BookList extends React.Component {
           ))
         }
         </div>
+
+        <hr className="divider" />
       </>
     );
   }
